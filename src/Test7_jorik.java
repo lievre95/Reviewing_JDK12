@@ -10,8 +10,13 @@ public class Test7_jorik {
         jorik.eat();
         jorik.display_info();
 
-        Rabbit_mutant pokik = new Rabbit_mutant(2,1,1,"pokik", "black");
-        pokik.display_info();
+//        Rabbit_mutant pokik = new Rabbit_mutant(2,1,"pokik", "black");
+//        pokik.display_info();
+//        Rabbit_mutant jokik = new Rabbit_mutant(1,3,4,"jokik", "black");
+//        jokik.display_info();
+
+        /*Rabbit_mutant jokik = new Rabbit_mutant(2,1, 4,"jokik", "black");
+        pokik.display_info();*/
 //        Rabbit_mutant lokik = new Rabbit_mutant(3,"Jopa");
 //        kokik.display_info();
 //        Rabbit_mutant kokik = new Rabbit_mutant(3, 4, 5, "Kokik", "Green");
@@ -38,13 +43,16 @@ class Rabbit {
 }
 
 
-class Rabbit_mutant{
+/*class Rabbit_mutant(int age, int ears_length, int teeth_length, String name, String color){
     int age;
     int ears_length;
     int teeth_length;
     String color;
     String name;
 
+    void display_info() {
+        System.out.println("age:" + age + "; ears_length:" + ears_length + "; teeth_length:"+ teeth_length + "; color:" + color + "; name:" + name + ";");
+    }*/
     //
 //Rabbit_mutant(int age, int ears_length, int teeth_length, String name, String color){
 //    this.age = 11;
@@ -59,18 +67,16 @@ class Rabbit_mutant{
         this(1, 1, 1, pokik,  black);
     }*/
 
-    void display_info() {
-        System.out.println("age:" + age + "; ears_length:" + ears_length + "; teeth_length:"+ teeth_length + "; color:" + color + "; name:" + name + ";");
-    }
 
 
-    Rabbit_mutant(int age, int ears_length, int teeth_length, String name, String color){
-        this.age = age;
-        this.ears_length = ears_length;
-        this.teeth_length = teeth_length;
-        this.name = name;
-        this.color = color;
-    }
+
+//    Rabbit_mutant(int age, int ears_length, String name, String color){
+//        this.age = age;
+//        this.ears_length = ears_length;
+//        this.teeth_length = 5;
+//        this.name = name;
+//        this.color = color;
+//    }
 //    Rabbit_mutant(int ears_length, String name){
 //        this(2, 2, int ears_length, String name, "Blue");
 //    }
@@ -80,4 +86,4 @@ class Rabbit_mutant{
 //    Rabbit_mutant(String name){
 //        this(3, 3, 5, String name, "Purple-x");
 //    }
-}
+//}
