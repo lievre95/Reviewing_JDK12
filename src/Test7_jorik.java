@@ -6,24 +6,20 @@ public class Test7_jorik {
         jorik.ears_length = 34;
         jorik.color = "red";
         jorik.name = "jorik";
-
-        jorik.eat();
         jorik.display_info();
+        jorik.eat();
 
-//        Rabbit_mutant pokik = new Rabbit_mutant(2,1,"pokik", "black");
-//        pokik.display_info();
-//        Rabbit_mutant jokik = new Rabbit_mutant(1,3,4,"jokik", "black");
-//        jokik.display_info();
+        Rabbit_mutant alesha = new Rabbit_mutant(4, 5, 6, "alesha", "white");
+        alesha.display_info_rabbit_mutant(); // if you change order of alesha.display_info_rabbit_mutant and alesha.eat it will not display alesha.eat
+        alesha.eat(); // if you change order of alesha.display_info_rabbit_mutant and alesha.eat it will not display alesha.eat
 
-        /*Rabbit_mutant jokik = new Rabbit_mutant(2,1, 4,"jokik", "black");
-        pokik.display_info();*/
-//        Rabbit_mutant lokik = new Rabbit_mutant(3,"Jopa");
-//        kokik.display_info();
-//        Rabbit_mutant kokik = new Rabbit_mutant(3, 4, 5, "Kokik", "Green");
-//        kokik.display_info();
-//        Rabbit_mutant pesik = new Rabbit_mutant(3);
-//        kokik.display_info();
+        Rabbit_mutant krest = new Rabbit_mutant(24, 20, 3, "krest", "yellow");
+        krest.display_info_rabbit_mutant();
+        krest.eat();
 
+        Rabbit_mutant borea = new Rabbit_mutant(14, 22, "borea", "gray");
+        borea.child_rabbit_mutant();
+        borea.eat();
     }
 }
 
@@ -43,47 +39,47 @@ class Rabbit {
 }
 
 
-/*class Rabbit_mutant(int age, int ears_length, int teeth_length, String name, String color){
+class Rabbit_mutant {
     int age;
     int ears_length;
     int teeth_length;
     String color;
     String name;
 
-    void display_info() {
-        System.out.println("age:" + age + "; ears_length:" + ears_length + "; teeth_length:"+ teeth_length + "; color:" + color + "; name:" + name + ";");
-    }*/
-    //
-//Rabbit_mutant(int age, int ears_length, int teeth_length, String name, String color){
-//    this.age = 11;
-//    this.ears_length = 12;
-//    this.teeth_length = 22;
-//    this.name = name;
-//    this.color = color;
-//
-//}
+    void eat() {
+        System.out.println("omnom-mnommm");
+    }
 
-/*    public Rabbit_mutant(String pokik, String black) {
-        this(1, 1, 1, pokik,  black);
-    }*/
+    void display_info_rabbit_mutant() {
+        System.out.println("age:" + age + "; ears_length:" + ears_length + "; teeth_length:" + teeth_length + "; color:" + color + "; name:" + name + ";");
+    }
+
+    Rabbit_mutant(int age, int ears_length, int teeth_length, String name, String color) {
+        this.age = age;
+        this.ears_length = ears_length;
+        this.teeth_length = teeth_length;
+        this.name = name;
+        this.color = color;
 
 
+    }
+
+//    Rabbit_mutant(int ears_length, int teeth_length, String name, String color) {
+//        this.age = 1;
+//    } // here will be age:1; ears_length:0; teeth_length:0; color:null; name:null;
 
 
-//    Rabbit_mutant(int age, int ears_length, String name, String color){
-//        this.age = age;
-//        this.ears_length = ears_length;
-//        this.teeth_length = 5;
-//        this.name = name;
-//        this.color = color;
-//    }
-//    Rabbit_mutant(int ears_length, String name){
-//        this(2, 2, int ears_length, String name, "Blue");
-//    }
-//    Rabbit_mutant(int teeth_length){
-//        this(1, 3, int teeth_length, "Kisik", "Green");
-//    }
-//    Rabbit_mutant(String name){
-//        this(3, 3, 5, String name, "Purple-x");
-//    }
-//}
+    Rabbit_mutant(int ears_length, int teeth_length, String name, String color) {
+        this.age = 1;
+        this.ears_length = ears_length;
+        this.teeth_length = teeth_length;
+        this.name = name;
+        this.color = color;
+    }
+
+    void child_rabbit_mutant() {
+        System.out.println("age:" + age + "; ears_length:" + ears_length + "; teeth_length:" + teeth_length + "; color:" + color + "; name:" + name + ";");
+        System.out.println("Uaaaaa!");
+    }
+
+}
