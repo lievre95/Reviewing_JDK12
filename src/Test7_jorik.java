@@ -10,8 +10,8 @@ public class Test7_jorik {
         jorik.eat();
 
         Rabbit_mutant alesha = new Rabbit_mutant(4, 5, 6, "alesha", "white");
-        alesha.display_info_rabbit_mutant(); // if you change order of alesha.display_info_rabbit_mutant and alesha.eat it will not display alesha.eat
         alesha.eat(); // if you change order of alesha.display_info_rabbit_mutant and alesha.eat it will not display alesha.eat
+        alesha.display_info_rabbit_mutant(); // if you change order of alesha.display_info_rabbit_mutant and alesha.eat it will not display alesha.eat
 
         Rabbit_mutant krest = new Rabbit_mutant(24, 20, 3, "krest", "yellow");
         krest.display_info_rabbit_mutant();
