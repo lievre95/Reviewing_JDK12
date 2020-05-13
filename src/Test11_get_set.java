@@ -14,22 +14,25 @@ public class Test11_get_set {
         private String name;
         private int age;
 
-        public Person_get_set(String name, int age){
+        public Person_get_set(String name, int age) {
             this.name = name;
             this.age = age;
         }
-        public String getName(){
+
+        public String getName() {
             return this.name;
         }
-        public void setName(String name){
+
+        public void setName(String name) {
             this.name = name;
         }
-        public int getAge(){
+
+        public int getAge() {
             return this.age;
         }
-        
-        public void setAge(int age){
-            if(age > 0 && age < 110);
+
+        public void setAge(int age) {
+            if (age > 0 && age < 110) ;
             this.age = age;
         }
 

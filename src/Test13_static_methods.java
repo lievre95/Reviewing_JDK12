@@ -9,21 +9,22 @@ class Test12_static_methods {
         Test12_static_person.display_Counter();//3
 
 
-        }
+    }
 }
 
-class Test12_static_person{
-    Test12_static_person(){
-        id = counter++ ;
+class Test12_static_person {
+    private int id;
+    private static int counter = 1;
+
+    Test12_static_person() {
+        id = counter++;
     }
 
-private int id;
-private static int counter =1;
+    public static void display_Counter() {
+        System.out.println("Counter: " + counter);
+    }
 
-public static void display_Counter(){
-    System.out.println("Counter: " + counter);
-}
-    public void displayId(){
-    System.out.println("Id: " + id);
+    public void displayId() {
+        System.out.println("Id: " + id);
     }
 }
