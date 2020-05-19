@@ -1,5 +1,3 @@
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
 class Test17_abstract_classs {
     public static void main(String[] args) {
 
