@@ -12,7 +12,7 @@ class Test19_interfaces {
         Printable p = new Journal("Foreign Affairs");
         p.print();
         //  Interface has no method getName(), an explicit cast is required
-        String name = ((Journal)p).getName();
+        String name = ((Journal) p).getName();
         System.out.println(name);
 
     }
@@ -23,41 +23,43 @@ interface Printable {
 //        void read();
 }
 
-     class Book implements Printable {
-        String name;
-        String author;
+class Book implements Printable {
+    String name;
+    String author;
 
-        Book(String name, String author) {
-            this.name = name;
-            this.author = author;
-        }
+    Book(String name, String author) {
+        this.name = name;
+        this.author = author;
+    }
 
-        public void print() {
-            System.out.println("Name:" + name + "; Author:" + author);
-        }
+    public void print() {
+        System.out.println("Name:" + name + "; Author:" + author);
+    }
 
 
 //        public void read() {
 //            System.out.println("BLA BLA BLA");
 //        }
+}
+
+class Journal implements Printable {
+    private String name;
+
+    String getName() {
+        return name;
     }
 
-    class Journal implements Printable {
-        private String name;
+    Journal(String name) {
+        this.name = name;
+    }
 
-        String getName(){
-            return name;
-        }
-        Journal(String name){
-            this.name = name;
-        }
-        public void print(){
-            System.out.println(name);
-        }
+    public void print() {
+        System.out.println(name);
+    }
 //        public void read() {
 //            System.out.println("BLA BLA BLA");
 //        }
-    }
+}
 
 
 
