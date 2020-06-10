@@ -1,4 +1,4 @@
-public abstract class Test21_enum4 {
+public class Test21_enum4 {
     enum Operatione {
         SUM {
             public int actione(int x, int y) {
