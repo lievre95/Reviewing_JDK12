@@ -5,9 +5,9 @@ class Test25_ArrayDeque {
         ArrayDeque<String> states = new ArrayDeque<String>();
         //standard adding  elements
         states.add("Germany");
-        states.add("France");
-        states.add("Great Britain");
-        states.add("Moldova");
+        states.addFirst("France");
+        states.push("Great Britain");
+        states.addLast("Moldova");
         states.add("Italy");
 
         //getting the first element without deleting
@@ -22,21 +22,21 @@ class Test25_ArrayDeque {
             System.out.println(states.pop());
         }
 
-//        ArrayDeque<Person_deque> people = new ArrayDeque<Person_deque>();
-//        people.addFirst(new Person("Jora"));
-//        people.addLast(new Person("Kolea"));
-//
-//        //enumeration without extraction
-//        for(Person p: people){
-//            System.out.println(p.getName());
+        ArrayDeque<Person_deque> people = new ArrayDeque<Person_deque>();
+        people.addFirst(new Person_deque("Jora"));
+        people.addLast(new Person_deque("Kolea"));
+
+        //enumeration without extraction
+        for(Person_deque p: people){
+            System.out.println(p.getName());
 
         }
     }
 }
-//class Person_deque{
-//    private String name;
-//    public Person_deque(String value){
-//        name = value;
-//    }
-//    String getName(){return name;}
-//}
+class Person_deque{
+    private String name;
+    public Person_deque(String value){
+        name = value;
+    }
+    String getName(){return name;}
+}
