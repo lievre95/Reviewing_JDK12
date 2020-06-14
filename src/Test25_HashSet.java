@@ -10,7 +10,7 @@ class Test25_HashSet {
         states.add("Italy");
 
         //trying to add the existing element
-        boolean isAdded =states.add("Germany");
+        boolean isAdded = states.add("Germany");
         System.out.println(isAdded);
 
         System.out.println("List has " + states.size() + " elements.");
@@ -26,8 +26,7 @@ class Test25_HashSet {
         states.remove("Germany");
 
 
-
-        HashSet<Personhs> people = new HashSet<Personhs>(10,0.8f);
+        HashSet<Personhs> people = new HashSet<Personhs>(10, 0.8f);
         people.add(new Personhs("Mike"));
         people.add(new Personhs("Nick"));
         people.remove("Nick");

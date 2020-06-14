@@ -17,7 +17,7 @@ class Test25_TreeSet {
 
     }
 // TreeSet() has constructors TreeSet()
-// TreeSet(Collection<? extends E> col  //creates a tree, in which is added all elements from collection col)
+// TreeSet(Collection<? extends E> col)  //creates a tree, in which is added all elements from collection col
 // TreeSet(Sorted <E> set)// creates a tree, in which added all sorted elements of set set
 // TreeSet(Comparator<? super E> comparator) creates an empty tree, where all elements will be sorted by Comparator
 }
