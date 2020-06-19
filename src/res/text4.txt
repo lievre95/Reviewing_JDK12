@@ -1,3 +1,2 @@
-Hello Junior!Welcome to Java
-Name: Tom Age: 34 
-PrintStream
+Hello Buffer! 
+ Hey! What's new mate?
