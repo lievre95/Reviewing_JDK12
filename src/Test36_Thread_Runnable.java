@@ -8,7 +8,7 @@ class JThread4 implements Runnable {
         try {
             Thread.sleep(400);
         } catch (InterruptedException e) {
-            System.out.println("Thread has been interrupt");
+            System.out.println("Thread has been interrupted");
         }
         System.out.printf("%s finished\n", Thread.currentThread().getName());
     }
