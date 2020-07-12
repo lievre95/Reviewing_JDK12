@@ -16,10 +16,8 @@ class Test38_StreamAPI2 {
 
         Stream<Phone> phoneStream = Stream.of(new Phone("iPhone", 600), new Phone("Xiaomi E3", 1000),
                 new Phone("Samsung Galaxy Note 13", 900));
-        phoneStream.filter(p -> p.getPrice() < 800).forEach(p -> System.out.println(p.getName()));
-
-//        phoneStream.map(p -> p.getName()).forEach(System.out::println);
-//        phoneStream.map(p -> "Name: " + p.getName() + "Price: " + p.getPrice()).forEach(s -> System.out.println(s));
+        phoneStream.filter(p -> p.getPrice() < 800)
+                .forEach(p -> System.out.println(p.getName()));
 
     }
 }
