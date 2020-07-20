@@ -1,4 +1,4 @@
-module demo{
-    requires java.desktop;
-    requires operations;
-}
+//module demo{
+//    requires java.desktop;
+//    requires operations;
+//}
