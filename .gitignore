@@ -1,2 +1,10 @@
 # Project exclude paths
 /out/
+/src/AnalyticCompany/_CarThread.java
+/src/AnalyticCompany/_getMethodTest.java
+/src/AnalyticCompany/_InterruptThread.java
+/src/AnalyticCompany/_Locking.java
+/src/AnalyticCompany/_RobotThread.java
+/src/AnalyticCompany/_Test2.java
+/src/AnalyticCompany/_TestRandMethod.java.java
+
