@@ -1,35 +1,41 @@
 /*    Write a method with only one boolean parameter. Depending on the parameter the method has to
-return “a”, “b”, or “c”.*/
+return “a”, “b”, or “c”. =
+PS: Scanner in the bonus  */
 package AnalyticCompany;
 
+import java.util.Optional;
 import java.util.Scanner;
 
 public class BooleanProblem {
-    private static java.lang.Object Object;
-    Object x = new Object();
-    boolean a = true;
+    private static boolean ObjectBoolean;
+    public static Optional<Boolean> TRI_UNKNOWN = Optional.empty();
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int num = scanner.nextInt();
+        Integer num = scanner.nextInt();
         if (num < 0) {
-            BooleanProblem.Object = false;
+            System.out.println(returnResult(true));
         } else if (num > 0) {
-            BooleanProblem.Object = true;
+            System.out.println(returnResult(false));
         } else {
-            BooleanProblem.Object = "stop";
+            System.out.println(returnResult(TRI_UNKNOWN));
+
         }
-        String resultParam = returnResult(num);
-        System.out.println(resultParam);
+//        System.out.println(resultParam);
+//        System.out.println(returnResult(true));
+//        System.out.println(returnResult(TRI_UNKNOWN));
     }
 
-    private static String returnResult(Object o) {
+    private static <ObjectBoolean> String returnResult(ObjectBoolean o) {
+        Boolean a = true;
+        Boolean b = false;
+        Optional<Object> c = Optional.empty();
         String result = null;
-        if (BooleanProblem.Object.equals(true)) {
+        if (o.equals(true)) {
             result = "a";
-        } else if (BooleanProblem.Object.equals(false)) {
+        } else if (o.equals(false)) {
             result = "b";
-        } else if (BooleanProblem.Object.equals("stop")) {
+        } else if (o.equals(TRI_UNKNOWN)) {
             result = "c";
         }
         return result;
